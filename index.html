@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&family=Rethink+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/TextPlugin.min.js"></script>  
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/EasePack.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script async src="https://kit.fontawesome.com/273d23d9c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -81,7 +87,7 @@
 
     <div class="beginning col-start-1 col-end-4 m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">
         <h2 class="reveal-type">Beginning</h2>
-        <p class="reveal-type">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maiores in nihil ratione illo ipsam voluptas doloremque hic deleniti quam corporis, consectetur veniam minus repellat possimus magni quibusdam? Aperiam, explicabo.</p>
+        <p class="reveal-type">My journey into the world of coding started back in school, where I first discovered the magic of turning lines of code into something real and functional. It was like a new language, full of endless possibilities, and I was instantly hooked. This fascination with coding led me to make a big decision: I would pursue a career in this field, where each day offers a chance to create and innovate.</p>
         <div class="about-img col-end-4 m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5">
             <img src="images/about-me-1.1.jpg" alt="about-me-1">
         </div>
@@ -92,7 +98,7 @@
             <img src="images/about-me-2.jpg" alt="about-me-2">
         </div>
         <h2 class="reveal-type">First Steps</h2>
-        <p class="reveal-type">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit facilis perferendis numquam in eius architecto unde eligendi amet saepe? Nemo, natus quisquam dolor exercitationem veniam repellat eum est illo.</p>
+        <p class="reveal-type">Fast forward to 2022, I found myself in Canada, embarking on my college adventure. Here, I'm not just learning about coding; I'm living it. College has been an eye-opener with its diverse environment and hands-on approach to education. Every class, project, and interaction adds a new layer to my understanding of web development. As a student, it's exciting to see my skills grow, and I'm eager to see where this path will take me. Sure, it's challenging at times, but that's what makes it worthwhile!</p>
     </div>
 </div>
 
@@ -101,51 +107,55 @@
   <h1 class="title-projects">&lt;My Projects&gt;</h1>
   <div class="project">
     <div class="project-content">
-      <h2 class="reveal-type">Project 1</h2>
-      <p class="reveal-type">Web Designer with experience in different applications, languages, and frameworks...</p>
+      <h2 class="reveal-type">VOLT Ear-Buds Promo Page</h2>
+      <p class="reveal-type">The Ear-buds Promo Page showcases the features, design, and innovative technology behind Ear-buds. The webpage provides potential customers with all the information they need to understand the value and craftsmanship of Ear-buds.</p>
+      <p class="reveal-type built-with">Built With : HTML, SCSS, JS, GSAP</p>
       <div class="button-container">
         <a href="#" class="btn btn-black">Visit Website</a>
         <a href="#" class="btn btn-white">View Code</a>
       </div>
     </div>
     <div class="project-image">
-      <img src="images/pexels-i̇lkin-efendiyev-18221948.jpg" alt="Free Website Background Photos">
+      <img src="images/project-1.png" alt="earbuds-webpage">
     </div>
   </div>
 
   <div class="project">
     <div class="project-content mobile-show">
-      <h2 class="reveal-type">Project 2</h2>
-      <p class="reveal-type">Web Designer with experience in different applications, languages, and frameworks...</p>
+      <h2 class="reveal-type">Billy Beer Brand Webpage</h2>
+      <p class="reveal-type">This project presents an engaging webpage designed to showcase Billy Beer, a brand synonymous with artisanal quality and rich taste. The site features an intuitive layout that guides visitors through the story of Billy Beer, its brewing process, and product selection. Interactive elements and vivid imagery come together to create a virtual experience as refreshing as the beer itself.</p>
+      <p class="reveal-type built-with">Built With : HTML, CSS, JS</p>
       <div class="button-container">
         <a href="#" class="btn btn-black">Visit Website</a>
-        <a href="#" class="btn btn-white">View Code</a>
+        <a href="https://github.com/l1ght000/Ear-Buds-PromoPage.git" class="btn btn-white">View Code</a>
       </div>
     </div>
     <div class="project-image">
-      <img src="images/pexels-i̇lkin-efendiyev-18221948.jpg" alt="Free Website Background Photos">
+      <img src="images/project-2.png" alt="beer-store">
     </div>
     <div class="project-content mobile-hidden">
-      <h2 class="reveal-type">Project 3</h2>
-      <p class="reveal-type">Web Designer with experience in different applications, languages, and frameworks...</p>
+      <h2 class="reveal-type">Music Mixer Web App</h2>
+      <p class="reveal-type">Dive into the rhythm with the Music Mixer Web App an interactive online game that lets you be the DJ. This compact web application offers a playful experience where users can mix tracks, blend beats, and create their own music masterpieces. Designed for simplicity and fun, it's a digital playground for music lovers and aspiring mixers alike.</p>
+      <p class="reveal-type built-with">Built With : HTML, CSS, JS</p>
       <div class="button-container">
         <a href="#" class="btn btn-black">Visit Website</a>
-        <a href="#" class="btn btn-white">View Code</a>
+        <a href="https://github.com/Ezra-Carriere/Carriere_E_Buria_M_FIP2.git" class="btn btn-white">View Code</a>
       </div>
     </div>
   </div>
 
   <div class="project">
     <div class="project-content">
-      <h2 class="reveal-type">Project 3</h2>
-      <p class="reveal-type">Web Designer with experience in different applications, languages, and frameworks...</p>
+      <h2 class="reveal-type">Music Mixer Web App</h2>
+      <p class="reveal-type">Dive into the rhythm with the Music Mixer Web App an interactive online game that lets you be the DJ. This compact web application offers a playful experience where users can mix tracks, blend beats, and create their own music masterpieces. Designed for simplicity and fun, it's a digital playground for music lovers and aspiring mixers alike.</p>
+      <p class="reveal-type built-with">Built With : HTML, CSS, JS</p>
       <div class="button-container">
         <a href="#" class="btn btn-black">Visit Website</a>
-        <a href="#" class="btn btn-white">View Code</a>
+        <a href="https://github.com/Ezra-Carriere/Carriere_E_Buria_M_Kabongo_E_Music_Mixer.git" class="btn btn-white">View Code</a>
       </div>
     </div>
     <div class="project-image">
-      <img src="images/pexels-i̇lkin-efendiyev-18221948.jpg" alt="Free Website Background Photos">
+      <img src="images/project-3.png" alt="Free Website Background Photos">
     </div>
   </div>
 </section>
@@ -156,7 +166,7 @@
         <div class="skill-text col-span-full">
             <h1 class="reveal-type" id="skills-title">&lt;My Skills&gt;</h1>
             <p class="reveal-type">Web Designer with experience in different applications, languages, and frameworks. I'm always looking for new challenges to tackle.</p>
-            <p class="reveal-type">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nostrum asperiores tempora ducimus suscipit eligendi illo debitis, tempore voluptates doloremque pariatur dicta libero quibusdam distinctio? Alias sunt nesciunt eveniet repellendus?</p>
+            <p class="reveal-type">As a Web Designer with experience in a variety of applications, languages, and frameworks, I thrive on diving into new challenges and expanding my technical repertoire. My skill set spans from front-end technologies like HTML5, CSS3, and JavaScript, to mastering design tools such as Adobe Creative Suite. I am proficient in responsive design principles and have a keen eye for UI/UX, ensuring seamless user experiences across all devices.</p>
         </div>
 
   
@@ -269,11 +279,4 @@
         </div>
     </div>
 </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/TextPlugin.min.js"></script>  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/EasePack.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://kit.fontawesome.com/273d23d9c6.js" crossorigin="anonymous"></script>
 </body>
