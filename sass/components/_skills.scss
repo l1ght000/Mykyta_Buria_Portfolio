@@ -1,0 +1,108 @@
+.skill-section {
+  background-color: #131313;
+  color: #eeeeee;
+  padding: 20px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.skill-text {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  
+  h1 {
+    color: rgb(87, 87, 236);
+    text-align: left;
+  }
+
+  p {
+    padding-top: 20px;
+    line-height: 25px;
+    text-align: left;
+  }
+}
+
+.skill-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-container {
+  margin-bottom: 30px; 
+  width: 80%; 
+
+  .skill-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; 
+
+    .skill-logo {
+      height: 35px; 
+      width: auto; 
+    }
+
+    .skill-percentage {
+      font-size: 0.8em; 
+      color: #eeeeee; 
+    }
+  }
+  .skill-bar {
+    background-color: #eee; 
+    border-radius: 10px;
+    height: 20px;
+    width: 100%; 
+    position: relative;
+
+    .skill-progress {
+      background-color: rgb(87, 87, 236);
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .skill-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .skill-text, .skill-box {
+    width: 50%; 
+    max-width: 50%; 
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .skill-container {
+    width: 100%; 
+   
+  }
+
+
+  .skill-html .skill-progress { background-color: #e34c26; }
+  .skill-css .skill-progress { background-color: #264de4; }
+  .skill-js .skill-progress { background-color: #f0db4f; }
+  .skill-php .skill-progress { background-color: #787cb5; }
+  .skill-xd .skill-progress { background-color: #ff61f6; }
+  .skill-ai .skill-progress { background-color: #ff9a00; }
+  .skill-ps .skill-progress { background-color: #31a8ff; }
+}
+
+.skill-html .skill-progress { width: 90%; }
+.skill-css .skill-progress { width: 80%; }
+.skill-js .skill-progress { width: 70%; }
+.skill-php .skill-progress { width: 60%; }
+.skill-xd .skill-progress { width: 90%; }
+.skill-ai .skill-progress { width: 80%; }
+.skill-ps .skill-progress { width: 70%; }

@@ -1,0 +1,60 @@
+footer {
+  background-color: #eee; 
+  color: #131313; 
+  padding: 40px 30px; 
+  text-align: center; 
+  background-image: url(/images/body-bcg.jpg);
+
+  .footer-content {
+    h2 {
+      margin-bottom: 25px;
+      font-weight: 600;
+      color: #131313;
+
+    }
+
+    a {
+      color: #131313; 
+      text-decoration: none;
+      &:hover {
+        color: rgb(87, 87, 236);
+        transition: 0.5s;
+      }
+    }
+
+    .footer-links {
+      margin: 20px 0; 
+
+      a {
+        margin: 0 10px; 
+        
+      }
+    }
+
+    .email {
+      margin-bottom: 20px; 
+      font-weight: 700;
+      color: rgb(87, 87, 236);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      p {
+        margin: 10px 0; 
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .social-icons {
+        a {
+          margin: 0 5px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

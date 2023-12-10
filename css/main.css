@@ -1,0 +1,841 @@
+p, h1, h2, h3 {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 100px;
+  z-index: 1000;
+  font-size: 15px;
+}
+header .logo img {
+  display: block;
+  height: 30px;
+  width: 100%;
+}
+header .logo .logo-text {
+  display: none;
+}
+header .hamburger-menu {
+  cursor: pointer;
+}
+header .hamburger-menu span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 4px 0;
+}
+header nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #131313;
+}
+header nav .nav-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
+}
+header nav .nav-links .theme-toggle {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .nav-links .theme-toggle .icon {
+  font-size: 1.5rem;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+}
+header nav .nav-links li {
+  text-align: center;
+  padding: 1rem 0;
+}
+header nav .nav-links li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header nav .nav-links li a:hover {
+  color: #F7931E;
+  background-color: white;
+  border-radius: 25px;
+}
+header nav.active {
+  display: block;
+}
+@media (min-width: 768px) {
+  header header nav {
+    display: block;
+  }
+  header header nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+    max-height: 0;
+  }
+  header .logo .logo-text {
+    display: block;
+    color: rgb(255, 255, 255);
+  }
+  header .logo img {
+    display: block;
+    height: 47px;
+    width: 100%;
+  }
+  header .hamburger-menu {
+    display: none;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: auto;
+  }
+  header nav .nav-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 55px;
+    letter-spacing: 4px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header nav .icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.hamburger-menu.opened span {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.hamburger-menu.opened span:nth-child(1) {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger-menu.opened span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.opened span:nth-child(3) {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+footer {
+  background-color: #eee;
+  color: #131313;
+  padding: 40px 30px;
+  text-align: center;
+  background-image: url(/images/vecteezy_cor-branca-e-cinza-abstrata-fundo-de-design-moderno-com_6651561.jpg);
+}
+footer .footer-content h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #131313;
+}
+footer .footer-content a {
+  color: #131313;
+  text-decoration: none;
+}
+footer .footer-content a:hover {
+  color: rgb(87, 87, 236);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer .footer-content .footer-links {
+  margin: 20px 0;
+}
+footer .footer-content .footer-links a {
+  margin: 0 10px;
+}
+footer .footer-content .email {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: rgb(87, 87, 236);
+}
+footer .footer-content .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+footer .footer-content .footer-bottom p {
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+footer .footer-content .footer-bottom .social-icons a {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.landing-page {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  background-image: url(/images/vecteezy_cor-branca-e-cinza-abstrata-fundo-de-design-moderno-com_6651561.jpg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue {
+  color: rgb(87, 87, 236);
+}
+
+.orange {
+  color: #F7931E;
+}
+
+.code-text {
+  color: grey;
+  opacity: 40%;
+}
+
+.avatar-container {
+  position: relative;
+  margin: 1em auto;
+  width: 350px;
+  height: 350px;
+}
+.avatar-container .avatar {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.avatar-container .random-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  background-color: grey;
+  border-radius: 45% 55% 48% 52%/55% 48% 52% 45%;
+  z-index: 1;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+ul i {
+  font-size: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 150px;
+}
+.btn.btn-black {
+  background-color: #131313;
+  color: #eee;
+  border: 1px solid transparent;
+}
+.btn.btn-black:hover {
+  background-color: #eee;
+  color: #131313;
+  border-color: #131313;
+}
+.btn.btn-white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+.btn.btn-white:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: transparent;
+}
+
+.social-links ul.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-links ul.nav-links li {
+  margin: 0 15px;
+}
+.social-links ul.nav-links li a {
+  color: inherit;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.social-links ul.nav-links li a:hover {
+  color: #F7931E;
+}
+.social-links ul.nav-links li i {
+  font-size: 30px;
+  vertical-align: middle;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.social-links ul.nav-links li i:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+  .landing-page {
+    grid-template-columns: repeat(8, 1fr);
+    padding: 20px;
+  }
+  .landing-page h1 {
+    grid-column: 1/5;
+  }
+  .landing-page .avatar-container {
+    grid-column: 6/-1;
+  }
+  .landing-page .header-btns, .landing-page .social-links {
+    grid-column: 1/5;
+    justify-self: start;
+  }
+}
+@media (min-width: 1200px) {
+  .landing-page {
+    grid-template-columns: repeat(12, 1fr);
+    background-image: url(/images/vecteezy_cor-branca-e-cinza-abstrata-fundo-de-design-moderno-com_6651561.jpg);
+  }
+  .landing-page h1 {
+    grid-column: 1/7;
+  }
+  .landing-page .avatar-container {
+    grid-column: 9/-1;
+    justify-self: end;
+    width: 400px;
+    height: auto;
+  }
+  .landing-page .header-btns, .landing-page .social-links {
+    grid-column: 2/8;
+    justify-self: start;
+    margin-bottom: 100px;
+    font-size: 30px;
+    margin-top: -50px;
+  }
+  .landing-page .header-btns .btn {
+    padding: 30px 40px;
+  }
+}
+@-webkit-keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.about-section {
+  background: linear-gradient(-45deg, #161616, #888888, #616161, #161616);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBackground 15s ease infinite;
+          animation: gradientBackground 15s ease infinite;
+  color: #ffffff;
+  padding: 20px;
+  padding-top: 80px;
+  display: block;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.about-section .aboutme-title {
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+.about-section h2 {
+  color: #F7931E;
+  margin: 0.5em 0;
+}
+.about-section p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.about-img img {
+  width: 80%;
+  height: auto;
+}
+
+.first-steps {
+  grid-column: 2/5;
+  text-align: right;
+  padding-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .about-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+  .aboutme-title {
+    font-size: 2.5em;
+  }
+  .first-steps {
+    grid-column: 7/13;
+    text-align: right;
+    padding: 20px;
+  }
+  .beginning {
+    padding: 20px;
+    grid-column: 1/7;
+  }
+  .about-img img {
+    width: 60%;
+    height: auto;
+  }
+}
+.my-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-image: url(/images/vecteezy_cor-branca-e-cinza-abstrata-fundo-de-design-moderno-com_6651561.jpg);
+}
+.my-projects .title-projects {
+  font-size: 2em;
+  color: #131313;
+  margin-bottom: 1em;
+  text-align: left;
+  width: 100%;
+  padding-left: 20px;
+}
+.my-projects .project {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.my-projects .project .project-content {
+  padding: 20px;
+  border-radius: 10px;
+}
+.my-projects .project .project-content h2 {
+  color: #131313;
+  margin-bottom: 1em;
+}
+.my-projects .project .project-image {
+  margin-top: 20px;
+}
+.my-projects .project .project-image img {
+  width: 800px;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .my-projects .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .my-projects .project .project-content, .my-projects .project .project-image {
+    width: 48%;
+  }
+  .mobile-show {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .my-projects .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}
+.skill-section {
+  background-color: #131313;
+  color: #eeeeee;
+  padding: 20px;
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.skill-text {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.skill-text h1 {
+  color: rgb(87, 87, 236);
+  text-align: left;
+}
+.skill-text p {
+  padding-top: 20px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.skill-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill-container {
+  margin-bottom: 30px;
+  width: 80%;
+}
+.skill-container .skill-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+.skill-container .skill-title-container .skill-logo {
+  height: 35px;
+  width: auto;
+}
+.skill-container .skill-title-container .skill-percentage {
+  font-size: 0.8em;
+  color: #eeeeee;
+}
+.skill-container .skill-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  height: 20px;
+  width: 100%;
+  position: relative;
+}
+.skill-container .skill-bar .skill-progress {
+  background-color: rgb(87, 87, 236);
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .skill-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .skill-text, .skill-box {
+    width: 50%;
+    max-width: 50%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .skill-container {
+    width: 100%;
+  }
+  .skill-html .skill-progress {
+    background-color: #e34c26;
+  }
+  .skill-css .skill-progress {
+    background-color: #264de4;
+  }
+  .skill-js .skill-progress {
+    background-color: #f0db4f;
+  }
+  .skill-php .skill-progress {
+    background-color: #787cb5;
+  }
+  .skill-xd .skill-progress {
+    background-color: #ff61f6;
+  }
+  .skill-ai .skill-progress {
+    background-color: #ff9a00;
+  }
+  .skill-ps .skill-progress {
+    background-color: #31a8ff;
+  }
+}
+.skill-html .skill-progress {
+  width: 90%;
+}
+
+.skill-css .skill-progress {
+  width: 80%;
+}
+
+.skill-js .skill-progress {
+  width: 70%;
+}
+
+.skill-php .skill-progress {
+  width: 60%;
+}
+
+.skill-xd .skill-progress {
+  width: 90%;
+}
+
+.skill-ai .skill-progress {
+  width: 80%;
+}
+
+.skill-ps .skill-progress {
+  width: 70%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.contact-container {
+  background: linear-gradient(-45deg, #B6BBC4, #F0ECE5, #575757, #B6BBC4);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBackground 15s ease infinite;
+          animation: gradientBackground 15s ease infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+  min-height: calc(100vh - 120px);
+}
+.contact-container .contact-form-container {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #eee;
+}
+.contact-container .contact-form-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.contact-container .contact-form-container .form-group {
+  margin-bottom: 1rem;
+}
+.contact-container .contact-form-container .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.contact-container .contact-form-container .form-group input[type=text],
+.contact-container .contact-form-container .form-group input[type=email],
+.contact-container .contact-form-container .form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+.contact-container .contact-form-container .form-group textarea {
+  min-height: 150px;
+}
+.contact-container .contact-form-container .submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: #333;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.contact-container .contact-form-container .submit-btn:hover {
+  background-color: #1a1a1a;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    padding: 1rem;
+  }
+  .contact-container .contact-form-container {
+    padding: 1rem;
+  }
+  .contact-form-container input {
+    width: 600px;
+  }
+}
