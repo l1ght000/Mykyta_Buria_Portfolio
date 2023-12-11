@@ -1,0 +1,36 @@
+.about-me{
+        background: #eee;
+.container {
+    margin: 50px auto;
+    max-width: 500px;
+}
+.content-section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px; 
+    margin: auto; 
+
+    .text-container-about {
+        order: 2; 
+        max-width: 600px; 
+        margin-bottom: 20px;
+    }
+
+    .image-container-about {
+        order: 1; 
+        max-width: 600px; 
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%; 
+        }
+    }
+}
+}
+
+:root {
+  --plyr-color-main: #F7931E;
+}
