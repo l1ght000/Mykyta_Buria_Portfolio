@@ -48,3 +48,6 @@ words.forEach(word => {
 
     hamburgerMenu.addEventListener('click', toggleMenu);
 })();
+
+//video-player
+const player = new Plyr('#player');
