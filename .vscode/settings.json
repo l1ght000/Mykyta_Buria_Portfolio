@@ -2,3 +2,12 @@
     "liveServer.settings.port": 5502,
     "editor.inlineSuggest.showToolbar": "onHover"
 }
+
+"liveSassCompile.settings.formats":[
+
+    {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "~/../css/"
+    }
+]
