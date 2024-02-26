@@ -1,5 +1,5 @@
  
-$navbar-color: #131313;
+$navbar-color: #161616;
 $text-color: rgb(255, 255, 255);
 $mobile-breakpoint: 768px; 
 $secondary-color: #F7931E;
@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  padding: 1rem 100px;
+  padding: 1rem 40px;
   z-index: 1000;
   font-size: 15px;
   
@@ -100,6 +100,7 @@ header {
   }
 
   @media(min-width: $mobile-breakpoint) {
+
   header {
     nav {
       display: block; 
@@ -114,6 +115,7 @@ header {
       }
     }
   }
+ 
 
     .logo .logo-text {
       display: block;

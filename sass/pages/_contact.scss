@@ -1,19 +1,9 @@
 $color1: #B6BBC4;
 $color2: #F0ECE5;
 $color3: #575757;
-@keyframes gradientBackground {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+
 .contact-container {
-    background: linear-gradient(-45deg, $color1, $color2, $color3, $color1);
+    background: white;
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite; 
     display: flex;

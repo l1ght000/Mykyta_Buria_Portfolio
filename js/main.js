@@ -1,4 +1,4 @@
-const words = ["A Web-Developer.", "An UX/UI Designer.", "A Promise Young Boy."];
+const words = ["A Web-Developer.", "An UX/UI Designer."];
 
 let cursor = gsap.to('.cursor', { opacity: 0, ease: "power2.inOut", repeat: -1 });
 
@@ -47,7 +47,42 @@ words.forEach(word => {
     };
 
     hamburgerMenu.addEventListener('click', toggleMenu);
+
+
+    const images = document.querySelectorAll('.small-images .image');
+    images.forEach(item => {
+        item.addEventListener('click', function(event) {
+            images.forEach(img => img.classList.remove('selected')); 
+            event.target.classList.add('selected'); 
+
+            const mainImage = document.querySelector('.main-image .current-image');
+            if (mainImage) {
+                mainImage.src = event.target.src;
+            }
+        });
+    });
 })();
+
+//gsap color animation
+(function() {
+    gsap.to(".random-circle", {
+        duration: 8,
+        backgroundColor: "#F7931E",
+    });
+    gsap.registerPlugin(ScrollToPlugin);
+    const portfolioLink = document.querySelector(".portfolio-btn");
+
+    portfolioLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        gsap.to(window, {
+            scrollTo: "#projects", // Simplified for testing
+            duration: 2
+        });
+    });
+})();
+
+
 
 //video-player
 const player = new Plyr('#player');
+

@@ -1,20 +1,19 @@
 footer {
-  background-color: #eee; 
-  color: #131313; 
+  background-color: #131313; 
+  color: #dadada; 
   padding: 40px 30px; 
   text-align: center; 
-  background: #cecece;
 
   .footer-content {
     h2 {
       margin-bottom: 25px;
       font-weight: 600;
-      color: #131313;
+      color: #dadada;
 
     }
 
     a {
-      color: #131313; 
+      color: #dadada; 
       text-decoration: none;
       &:hover {
         color: rgb(87, 87, 236);
